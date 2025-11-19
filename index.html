@@ -19,7 +19,7 @@
       font-family: "Great Vibes", cursive;
     }
 
-    /* No more opacity 0 → 1, just a smooth zoom */
+    /* Smooth zoom */
     .image-anim {
       transform: scale(1.03);
       transition: transform 0.9s ease-out;
@@ -31,23 +31,24 @@
   </style>
 
   <!-- Open Graph / WhatsApp Preview -->
-    <meta property="og:title" content="Alya & Raka — Wedding Invitation" />
-    <meta property="og:description" content="Join us in celebrating our special day — 21 December 2025, Jakarta." />
-    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
-    <meta property="og:url" content="https://yourgithubusername.github.io/yourrepo/" />
-    <meta property="og:type" content="website" />
+  <meta property="og:title" content="Andhika &amp; Adhelia — Wedding Invitation" />
+  <meta property="og:description" content="Join us in celebrating our special day — 20 November 2025, Jakarta." />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:url" content="https://yourgithubusername.github.io/yourrepo/" />
+  <meta property="og:type" content="website" />
 
-    <!-- WhatsApp-specific fallback -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+  <!-- WhatsApp / Twitter fallback -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
 </head>
 
-<body class="m-0 p-0 h-screen overflow-y-scroll bg-black text-white">
+<body class="m-0 p-0 bg-black text-white">
 
-  <div class="w-screen">
+  <!-- SCROLL + SNAP CONTAINER -->
+  <div class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
 
     <!-- Section 1: Hero -->
-    <section class="relative h-screen w-full flex items-center justify-center text-center px-6 overflow-hidden">
+    <section class="relative h-screen w-full flex items-center justify-center text-center px-6 overflow-hidden snap-start">
       <img src="img/wp1.jpeg"
            alt="Wedding hero"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
@@ -56,9 +57,9 @@
       <div class="relative z-10 space-y-4">
         <p class="tracking-[0.3em] uppercase text-xs md:text-sm text-gray-200">The Wedding Of</p>
         <h1 class="font-script text-5xl md:text-6xl lg:text-7xl">Andhika &amp; Adhelia</h1>
-        <p class="text-sm md:text-base text-gray-200">Sunday, 21 December 2025 · Jakarta</p>
+        <p class="text-sm md:text-base text-gray-200">Thursday, 20 November 2025 · Tangerang</p>
         <button
-          onclick="document.getElementById('story').scrollIntoView({ behavior: 'smooth' });"
+          onclick="document.getElementById('story').scrollIntoView({ behavior: 'smooth', block: 'start' });"
           class="mt-4 inline-flex items-center gap-2 px-6 py-2 border border-white/70 rounded-full text-xs md:text-sm uppercase tracking-[0.2em] bg-white/5 hover:bg-white/15 backdrop-blur-sm transition">
           View Details
           <span class="text-lg">⌄</span>
@@ -67,8 +68,8 @@
     </section>
 
     <!-- Section 2: Our Story -->
-    <section id="story" class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden">
-      <img src="https://picsum.photos/id/1016/1920/1080"
+    <section id="story" class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+      <img src="img/wp2.jpeg"
            alt="Our story"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80"></div>
@@ -88,8 +89,8 @@
     </section>
 
     <!-- Section 3: Event Details -->
-    <section class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden">
-      <img src="https://picsum.photos/id/1018/1920/1080"
+    <section class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+      <img src="img/wp3.jpg"
            alt="Event details"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
       <div class="absolute inset-0 bg-black/75"></div>
@@ -103,21 +104,21 @@
         <div class="grid gap-6 md:grid-cols-2">
           <div class="border border-white/20 rounded-2xl p-5 md:p-6 bg-white/5 backdrop-blur-sm">
             <h3 class="uppercase tracking-[0.2em] text-xs md:text-sm mb-2 text-gray-100">Ceremony</h3>
-            <p class="text-base md:text-lg font-medium">Sunday, 21 December 2025</p>
-            <p class="text-sm text-gray-200 mt-1">10:00 – 12:00</p>
+            <p class="text-base md:text-lg font-medium">Thursday, 20 November 2025</p>
+            <p class="text-sm text-gray-200 mt-1">09:30 – 10:00</p>
             <p class="text-sm text-gray-300 mt-3">
-              Rumah Kota Hall<br />
-              Jakarta, Indonesia
+              SMAN 1 Kota Tangerang<br />
+              Tangerang, Indonesia
             </p>
           </div>
 
           <div class="border border-white/20 rounded-2xl p-5 md:p-6 bg-white/5 backdrop-blur-sm">
             <h3 class="uppercase tracking-[0.2em] text-xs md:text-sm mb-2 text-gray-100">Reception</h3>
-            <p class="text-base md:text-lg font-medium">Sunday, 21 December 2025</p>
-            <p class="text-sm text-gray-200 mt-1">19:00 – 22:00</p>
+            <p class="text-base md:text-lg font-medium">Thursday, 20 November 2025</p>
+            <p class="text-sm text-gray-200 mt-1">10:00 – 11:00</p>
             <p class="text-sm text-gray-300 mt-3">
-              Sky Garden Ballroom<br />
-              Jakarta, Indonesia
+              SMAN 1 Kota Tangerang<br />
+              Tangerang, Indonesia
             </p>
           </div>
         </div>
@@ -125,8 +126,8 @@
     </section>
 
     <!-- Section 4: RSVP -->
-    <section class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden">
-      <img src="https://picsum.photos/id/1020/1920/1080"
+    <section class="relative h-screen w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+      <img src="img/wp4.jpg"
            alt="RSVP"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/70"></div>
@@ -146,8 +147,7 @@
 
         <div class="pt-4 text-xs md:text-sm text-gray-300 space-y-1">
           <p>For any questions, contact:</p>
-          <p>Alya: <span class="font-medium">+62-812-3456-7890</span></p>
-          <p>Raka: <span class="font-medium">+62-813-9876-5432</span></p>
+          <p>Racel: <span class="font-medium">+62-812-2822-2259</span></p>
         </div>
       </div>
     </section>
