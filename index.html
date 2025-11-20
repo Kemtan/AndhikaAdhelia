@@ -45,10 +45,10 @@
 <body class="m-0 p-0 bg-black text-white">
 
   <!-- SCROLL + SNAP CONTAINER -->
-  <div class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+  <div class="h-[100svh] w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
 
     <!-- Section 1: Hero -->
-    <section class="relative h-dvh w-full flex items-center justify-center text-center px-6 overflow-hidden snap-start">
+    <section class="relative h-[100svh] w-full flex items-center justify-center text-center px-6 overflow-hidden snap-center">
       <img src="img/wp1.jpeg"
            alt="Wedding hero"
            class="absolute inset-0 w-full h-full object-cover image-anim object-[47%_center] md:object-center" />
@@ -68,7 +68,7 @@
     </section>
 
     <!-- Section 2: Our Story -->
-    <section id="story" class="relative h-dvh w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+    <section id="story" class="relative h-[100svh] w-full flex items-center justify-center px-6 overflow-hidden snap-center">
       <img src="img/wp2.jpeg"
            alt="Our story"
            class="absolute inset-0 w-full h-full object-cover image-anim object-[47%_center] md:object-center" />
@@ -89,7 +89,7 @@
     </section>
 
     <!-- Section 3: Event Details -->
-    <section class="relative h-dvh w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+    <section class="relative h-[100svh] w-full flex items-center justify-center px-6 overflow-hidden snap-center">
       <img src="img/wp3.jpg"
            alt="Event details"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
@@ -126,7 +126,7 @@
     </section>
 
     <!-- Section 4: RSVP -->
-    <section class="relative h-dvh w-full flex items-center justify-center px-6 overflow-hidden snap-start">
+    <section class="relative h-[100svh] w-full flex items-center justify-center px-6 overflow-hidden snap-center">
       <img src="img/wp4.jpg"
            alt="RSVP"
            class="absolute inset-0 w-full h-full object-cover image-anim" />
@@ -167,7 +167,7 @@
       }
 
       document.getElementById('story')
-        .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        .scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     const options = { threshold: 0.4 };
